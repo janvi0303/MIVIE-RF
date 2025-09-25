@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE; /* Light background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #201E43; /* Dark text color */
+    background-color: #E4E0E1; /* Fallback color */
+    background-image: url('bg.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px 70px; /* Increased padding for better spacing */
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2); /* Larger shadow */
+    border-radius: 15px;
+    text-align: center;
+    max-width: 900px; /* Increased width */
+    min-height: 300px;
+    width: 100%;
+    margin: 0 20px;
+    transition: box-shadow 0.3s ease;
+    border-top: 10px solid #508C9B; /* Accent color for border */
+}
+
+.container:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25); /* Stronger hover effect */
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #201E43; /* Heading color */
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+/* Form Styles */
+label {
+    font-weight: 600; /* Bold font for better visibility */
+    margin-bottom: 15px;
+    display: block;
+    color: #493628; /* Text color */
+    font-size: 1.5em; /* Increased font size */
+}
+
+
+input[type="text"] {
+    width: 100%; /* Ensures the input takes full width */
+    padding: 20px; /* Increased padding for better spacing */
+    font-size: 1.5em; /* Increased font size */
+    border: 2px solid #D6C0B3; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    height: 60px; /* Explicit height for a taller input */
+    margin-bottom: 30px; /* Spacing below the input */
+    background-color: #EEEEEE; /* Background color */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input[type="text"]:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #508C9B; /* Change border color on focus */
+    background-color: #fff; /* Change background on focus */
+}
+
+
+
+/* Button Styling */
+button {
+    background-color: #508C9B;
+    color: white;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #134B70; /* Darker on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    button {
+        padding: 12px 30px;
+    }
+}

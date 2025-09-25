@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Recommendation Engine</h1>
+        <form action="/recommend" method="POST">
+            <label for="movie_title">Enter or Select Movie Title:</label>
+            <input list="movies" id="movie_title" name="movie_title" placeholder="Type or select a movie" required>
+            <datalist id="movies">
+                {% for movie in movies %}
+                    <option value="{{ movie }}">
+                {% endfor %}
+            </datalist>
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
