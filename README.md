@@ -1,5 +1,4 @@
-# MIVIE-RF
-# MIVIE-RF: Content-Based Movie Recommendation System
+# MIVIE-RF: Movie Recommendation System
 
 Welcome to **MIVIE-RF** – a content-based movie recommendation system leveraging the power of the Random Forest algorithm. Built using **Python** and **Flask**, this project demonstrates how machine learning can enhance user experience by providing personalized movie suggestions.
 
@@ -112,12 +111,6 @@ predictions = model.predict(X_new)
 ## 👩‍💻 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for improvements or bug fixes.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
