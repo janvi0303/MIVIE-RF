@@ -39,6 +39,8 @@ Random Forest is an ensemble machine learning algorithm that builds multiple dec
 
 > _**In this project, Random Forest helps in modeling complex interactions between movie features and user preferences, leading to highly relevant recommendations.**_
 
+
+![Random Forest GIF](randomforest.gif)
 ---
 
 ## 🛠️ Tech Stack
